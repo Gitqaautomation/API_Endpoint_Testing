@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "67ab3594-150c-49c6-b161-9318efc08494",
+		"name": "sportsbook_recovery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v1/sportsbook/recovery",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "8LKvrh6C2fe8mKXZ",
+						"type": "text"
+					},
+					{
+						"key": "x-client-id",
+						"value": "C5C75EE6-0D00-456E-6029-08D8D7008B0B",
+						"type": "text"
+					},
+					{
+						"key": "x-operator-token",
+						"value": "8D11A30E-885B-43E0-8A66-FDD1D894831E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{preprodUrl}}v1/sportsbook/recovery",
+					"host": [
+						"{{preprodUrl}}v1"
+					],
+					"path": [
+						"sportsbook",
+						"recovery"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
