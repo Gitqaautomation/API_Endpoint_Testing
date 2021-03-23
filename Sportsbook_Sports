@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "3c66c9fa-153d-4b88-ade6-9b3003215acc",
+		"name": "Sportsbook_Sports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/sportsbook/sports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"\r",
+							"pm.test(\"Status code is 100 with a equivalent of 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"\r",
+							"    tests[\"Cricket is the 1st Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[0].sportName == \"Cricket\"\r",
+							"    tests[\"SportId value for cricket should be 21\"] = jsonData.result.sports[0].sportId == 21\r",
+							"\r",
+							"    tests[\"Soccer is the 2nd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[1].sportName == \"Soccer\"\r",
+							"    tests[\"SportId value for soccer should be 1\"] = jsonData.result.sports[1].sportId == 1\r",
+							"\r",
+							"    // // tests[\"eSoccer is the 3rd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[2].sportName == \"eSoccer\"\r",
+							"    // // tests[\"SportId value for eSoccer should be 137\"] = jsonData.result.sports[2].sportId == 137\r",
+							"\r",
+							"    // tests[\"Tennis is the 3rd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[2].sportName == \"Tennis\"\r",
+							"    // tests[\"SportId value for Tennis should be 5\"] = jsonData.result.sports[2].sportId == 5\r",
+							"\r",
+							"    // tests[\"Basketball is the 4th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[3].sportName == \"Basketball\"\r",
+							"    // tests[\"SportId value for Basketball should be 2\"] = jsonData.result.sports[3].sportId == 2\r",
+							"\r",
+							"    // tests[\"eBasketball is the 5th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[4].sportName == \"eBasketball\"\r",
+							"    // tests[\"SportId value for eBasketball should be 153\"] = jsonData.result.sports[4].sportId == 153\r",
+							"\r",
+							"    // tests[\"Table Tennis is the 6th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[5].sportName == \"Table Tennis\"\r",
+							"    // tests[\"SportId value for Table Tennis should be 20\"] = jsonData.result.sports[5].sportId == 20\r",
+							"\r",
+							"    // tests[\"Volleyball is the 7th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[6].sportName == \"Volleyball\"\r",
+							"    // tests[\"SportId value for Volletball should be 23\"] = jsonData.result.sports[6].sportId == 23\r",
+							"\r",
+							"    // tests[\"American Footabll is the 8th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[7].sportName == \"American Football\"\r",
+							"    // tests[\"SportId value for American Football should be 16\"] = jsonData.result.sports[7].sportId == 16\r",
+							"\r",
+							"    // tests[\"Aussie Rules is the 9th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[8].sportName == \"Aussie Rules\"\r",
+							"    // tests[\"SportId value for Aussie Rules should be 13\"] = jsonData.result.sports[8].sportId == 13\r",
+							"\r",
+							"    // // tests[\"Badminton is the 11th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[10].sportName == \"Badminton\"\r",
+							"    // // tests[\"SportId value for Badminton should be 31\"] = jsonData.result.sports[10].sportId == 31\r",
+							"\r",
+							"    // tests[\"Baseball is the 10th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[9].sportName == \"Baseball\"\r",
+							"    // tests[\"SportId value for Baseball should be 3\"] = jsonData.result.sports[9].sportId == 3\r",
+							"\r",
+							"    // tests[\"Darts is the 11th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[10].sportName == \"Darts\"\r",
+							"    // tests[\"SportId value for Darts should be 3\"] = jsonData.result.sports[10].sportId == 22\r",
+							"\r",
+							"    // tests[\"Handball is the 12th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[11].sportName == \"Handball\"\r",
+							"    // tests[\"SportId value for Handball should be 6\"] = jsonData.result.sports[11].sportId == 6\r",
+							"\r",
+							"    // tests[\"Ice Hockey is the 13th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[12].sportName == \"Ice Hockey\"\r",
+							"    // tests[\"SportId value for Ice Hockey should be 4\"] = jsonData.result.sports[12].sportId == 4\r",
+							"\r",
+							"    // // tests[\"elce Hockey is the 16th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[15].sportName == \"elce Hockey\"\r",
+							"    // // tests[\"SportId value for elce Hockey should be 195\"] = jsonData.result.sports[15].sportId ==195\r",
+							"\r",
+							"    // tests[\"Snooker is the 14th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[13].sportName == \"Snooker\"\r",
+							"    // tests[\"SportId value for Snooker should be 19\"] = jsonData.result.sports[13].sportId == 19\r",
+							"\r",
+							"    // tests[\"Rugby is the 15th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[14].sportName == \"Rugby\"\r",
+							"    // tests[\"SportId value for Rugby should be 12\"] = jsonData.result.sports[14].sportId == 12\r",
+							"\r",
+							"    // tests[\"Counter-Strike is the 16th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[15].sportName == \"Counter-Strike\"\r",
+							"    // tests[\"SportId value for Counter-Strike should be 109\"] = jsonData.result.sports[15].sportId == 109\r",
+							"\r",
+							"    // tests[\"League of Legends is the 17th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[16].sportName == \"League of Legends\"\r",
+							"    // tests[\"SportId value for League of Legends should be 110\"] = jsonData.result.sports[16].sportId == 110\r",
+							"\r",
+							"    // // tests[\"Dota 2 is the 21st Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[20].sportName == \"Dota 2\"\r",
+							"    // // tests[\"SportId value for Dota 2 should be 111\"] = jsonData.result.sports[20].sportId == 111\r",
+							"\r",
+							"    // // tests[\"StarCraft is the 22nd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[21].sportName == \"StarCraft\"\r",
+							"    // // tests[\"SportId value for StarCraft should be 112\"] = jsonData.result.sports[21].sportId == 112\r",
+							"\r",
+							"    // // tests[\"Call of Duty is the 23rd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[22].sportName == \"Call of Duty\"\r",
+							"    // // tests[\"SportId value for Call of Duty should be 118\"] = jsonData.result.sports[22].sportId == 118\r",
+							"\r",
+							"    // // tests[\"Overwatch is the 24th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[23].sportName == \"Overwatch\"\r",
+							"    // // tests[\"SportId value for Overwatch should be 121\"] = jsonData.result.sports[23].sportId == 121\r",
+							"\r",
+							"    // //  tests[\"Rainbow Six is the 25th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[24].sportName == \"Rainbow Six\"\r",
+							"    // // tests[\"SportId value for Rainbow Six should be 125\"] = jsonData.result.sports[24].sportId == 125\r",
+							"\r",
+							"    // // tests[\"Rocket Leaguex is the 26th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[25].sportName == \"Rocket League\"\r",
+							"    // // tests[\"SportId value for Rocket League should be 128\"] = jsonData.result.sports[25].sportId == 128\r",
+							"\r",
+							"    // // tests[\"King of Glory is the 27th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[26].sportName == \"King of Glory\"\r",
+							"    // // tests[\"SportId value for King of Glory should be 134\"] = jsonData.result.sports[26].sportId == 134\r",
+							"\r",
+							"    // // tests[\"Hearthstone is the 28th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[27].sportName == \"Hearthstone\"\r",
+							"    // // tests[\"SportId value for Hearthstone should be 113\"] = jsonData.result.sports[27].sportId == 113\r",
+							"\r",
+							"\r",
+							"    // tests[\"Virtual Soccer is the 18th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[17].sportName == \"Virtual Soccer\"\r",
+							"    // tests[\"SportId value for Virtual Soccer should be 1001\"] = jsonData.result.sports[17].sportId == 1001\r",
+							"\r",
+							"    // tests[\"Virtual Basketballe is the 19th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[18].sportName == \"Virtual Basketball\"\r",
+							"    // tests[\"SportId value for Virtual Basketball should be 1002\"] = jsonData.result.sports[18].sportId == 1002\r",
+							"\r",
+							"    // tests[\"Virtual Tennis is the 20th Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[19].sportName == \"Virtual Tennis\"\r",
+							"    // tests[\"SportId value for Virtual Tennis should be 1005\"] = jsonData.result.sports[19].sportId == 1005\r",
+							"\r",
+							"    // //  tests[\"Virtual Baseball is the 31st Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[20].sportName == \"Virtual Baseball\"\r",
+							"    // // tests[\"SportId value for Virtual Baseball should be 1003\"] = jsonData.result.sports[20].sportId == 1003\r",
+							"\r",
+							"\r",
+							"    // tests[\"Virtual Horse Classicse is the 21st Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[20].sportName == \"Virtual Horse Classics\"\r",
+							"    // tests[\"SportId value for Virtual Horse Classics should be 1055\"] = jsonData.result.sports[20].sportId == 1055\r",
+							"\r",
+							"\r",
+							"    // tests[\"Virtual Dog Racing is the 22nd Sportname Should be displayed in the sportstree navigation  \"] = jsonData.result.sports[21].sportName == \"Virtual Dog Racing\"\r",
+							"    // tests[\"SportId value for Virtual Dog Racing should be 1058\"] = jsonData.result.sports[21].sportId == 1058\r",
+							"\r",
+							"\r",
+							"\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "8LKvrh6C2fe8mKXZ",
+						"type": "text"
+					},
+					{
+						"key": "x-client-id",
+						"value": "5093617A-9367-EB11-89FB-00224815B68B",
+						"type": "text"
+					},
+					{
+						"key": "x-operator-token",
+						"value": "8D11A30E-885B-43E0-8A66-FDD1D894831E",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{preprodUrl}}v1/sportsbook/sports",
+					"host": [
+						"{{preprodUrl}}v1"
+					],
+					"path": [
+						"sportsbook",
+						"sports"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
