@@ -1,0 +1,169 @@
+{
+	"id": "c3d942b7-047a-4751-88da-c65c7a5b6fa3",
+	"name": "Staging_New_Platform_Environment",
+	"values": [
+		{
+			"key": "preprodUrl",
+			"value": "https://preprod-platformapi.song88.com/",
+			"enabled": true
+		},
+		{
+			"key": "adminAPI",
+			"value": "https://staging-adminapi.song88.com/",
+			"enabled": true
+		},
+		{
+			"key": "operatorAPI",
+			"value": "https://preprod-operatorapi.song88.com/",
+			"enabled": true
+		},
+		{
+			"key": "pusd1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "boToken",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "boUserId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "newClient",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "newBrandId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "minStake",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "rabbitmq",
+			"value": "http://52.229.219.140:15672",
+			"enabled": true
+		},
+		{
+			"key": "fixtureId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "marketId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "selectionId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "decimalOdds",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "correlationId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "preProdSbApi",
+			"value": "https://preprod-sportsbookapi.song88.com/",
+			"enabled": true
+		},
+		{
+			"key": "fixtureId1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "marketId1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "selectionId1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "decimalOdds1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "correlationId1",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "segmentId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "sportId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "leagueId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "origBal",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "origbal",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "OrigBalance",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "afterBalance",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "proFixId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "payOuts",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "CurBetId",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "expectedBalance",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-03-17T08:45:08.190Z",
+	"_postman_exported_using": "Postman/8.0.7"
+}
